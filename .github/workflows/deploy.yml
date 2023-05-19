@@ -21,4 +21,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: dist
-          command: publish --name minecraft-update-crawler
+          command: deploy --name minecraft-update-crawler main.js
