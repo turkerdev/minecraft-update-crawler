@@ -20,7 +20,7 @@ jobs:
       - uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          command: deploy --name minecraft-update-crawler dist/main.js
+          command: deploy
           secrets: |
             DISCORD_TOKEN
         env:
