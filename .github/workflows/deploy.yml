@@ -20,5 +20,4 @@ jobs:
       - uses: cloudflare/wrangler-action@2.0.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
-          workingDirectory: dist
-          command: deploy --name minecraft-update-crawler --compatibility-date 2023-05-19 main.js
+          command: deploy --name minecraft-update-crawler dist/main.js
