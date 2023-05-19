@@ -21,3 +21,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           command: deploy --name minecraft-update-crawler dist/main.js
+          secrets: |
+            DISCORD_TOKEN
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
