@@ -2,5 +2,9 @@ name = "minecraft-update-crawler"
 main = "dist/main.js"
 compatibility_date = "2023-05-19"
 
+kv_namespaces = [
+  { binding = "MC_KV", id = "6f5e5107ccd246ddae2fae8d50b7d577" }
+]
+
 [triggers]
 crons = ["*/30 * * * *"]
